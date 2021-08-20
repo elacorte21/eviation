@@ -1,0 +1,41 @@
+.nav-dots {
+    position: fixed;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #0B1C54;
+    border-radius: 50%;
+    list-style: none;
+    background: none;
+    transition: all 0.3s;
+}
+.nav-dot:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+.nav-dot:hover, .nav-dot.is-active {
+    background: #0B1C54;
+}
+.nav-dots.lt .nav-dot {
+    border: 1px solid #fff;
+    background: none;
+}
+.nav-dots.lt .nav-dot:hover, .nav-dots.lt .nav-dot.is-active {
+    background: #fff;
+}
+.section {
+    height: 100vh;
+}
+.section__heading {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    text-transform: capitalize;
+}
